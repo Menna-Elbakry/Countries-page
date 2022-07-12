@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--  the browser uses standard mode to render your code this mode supports all features or attributes used
+     if doctype doesn't exist it will use quirks mode -->
+<html lang="en">
+
+<head>
+    <title>home</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../main.css" />
+
+    <meta name="description" content="">
+    <style> </style>
+    <script>
+
+        function changeColor() {
+            let color = document.getElementById('choose-background-color').value;
+            document.body.style.backgroundColor = color;
+
+        }
+
+        function egReadMore(id) {
+            let dots = document.getElementById('eg-dots');
+            let moreText = document.getElementById('eg-more');
+            let textBtn = document.getElementById(id);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                textBtn.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                textBtn.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function irReadMore(id) {
+            let dots = document.getElementById('ir-dots');
+            let moreText = document.getElementById('ir-more');
+            let textBtn = document.getElementById(id);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                textBtn.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                textBtn.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <header>Countries</header>
+    <nav class="nav">
+        <ul>
+            <li><a href="./login.html" target="_blank">login </a></li>
+            <li><a href="./signup.html" target="_blank">signup</a></li>
+        </ul>
+
+    </nav>
+    <main class="main">
+        <aside class="side">
+            <!-- <label for="background" class="bg-label">Background color</label>
+            <input type="color" name="background" id="choose-background-color" />
+            <input type="button" name="bg-color" onclick="changeColor()" value="Change" /> -->
+            <br />
+            <label for="country">Choose a country</label>
+            <input list="countries" name="country">
+            <datalist id="countries">
+                <option value="egypt">Egypt</option>
+                <option value="iraq">Iraq</option>
+            </datalist>
+            <br />
+            <input type="range" name="price-range" min="100" max="10000" />
+            <br />
+            <label class="cont">Transportation
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label><br />
+
+            <label class="cont">Lodging
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label><br />
+
+            <label class="cont">Touring
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label><br />
+
+            <label class="cont">Touring
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label><br />
+
+
+        </aside>
+        <article class="content">
+
+            <br>
+            <figure>
+                <img src="../Flag_of_Egypt.png" alt="Flag_of_Egypt" />
+                <figcaption class="flag" data="egypt"> Egypt, a country linking northeast Africa with the Middle East,
+                    <span id="eg-dots">...</span><span id="eg-more" hidden>dates to the time of the pharaohs.
+                        Millennia-old monuments sit along the fertile Nile River Valley,
+                        including Giza's colossal Pyramids and Great Sphinx as well as Luxor's hieroglyph-lined
+                        Karnak Temple and Valley of the Kings tombs. The capital, Cairo, is home to Ottoman
+                        landmarks like Muhammad Ali Mosque and the Egyptian Museum, a trove of antiquities.
+                    </span>
+                    <button onclick="egReadMore(this.id)" id="eg-readBtn" class="read-btn">Read
+                        more</button>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../Flag_of_Iraq.png" alt="Flag_of_Iraq" />
+                <figcaption class="flag" data="iraq">Iraq, officially the Republic of Iraq, is a country in Western
+                    Asia. It is
+                    bordered by<span id="ir-dots">...</span><span id="ir-more" hidden>Turkey to the north, Iran to
+                        the east,the Persian Gulf and Kuwait to the southeast, Saudi Arabia to the south, Jordan to the
+                        southwest and Syria to the west. The capital and largest city is Baghdad.
+                    </span>
+                    <button onclick="irReadMore(this.id)" id="ir-readBtn" class="read-btn">Read more</button>
+                </figcaption>
+            </figure>
+        </article>
+        <br />
+    </main>
+</body>
+
+</html>

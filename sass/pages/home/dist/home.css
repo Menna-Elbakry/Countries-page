@@ -1,0 +1,73 @@
+.read-btn, .content, .side, header, figcaption, figure {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+figure {
+  width: 80%;
+  padding: 10px;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  border: 1px black solid;
+  margin: 0 32%;
+}
+
+figcaption {
+  font-size: larger;
+  font-family: "Gill Sans";
+  display: inline-block;
+  font-family: serif;
+  font-size: medium;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: Arial;
+  color: azure;
+}
+
+.side {
+  font-size: larger;
+  font-family: "Gill Sans";
+  width: 25%;
+  position: fixed;
+  height: 100vh;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.content {
+  font-size: larger;
+  font-family: "Gill Sans";
+  width: 75%;
+  float: right;
+  height: 100vh;
+  color: aliceblue;
+}
+
+.more {
+  display: none;
+}
+
+.read-btn {
+  margin-top: 10px;
+  width: 100px;
+  font-size: medium;
+  border-radius: 5000px;
+  color: azure;
+}
+.read-btn:hover {
+  cursor: pointer;
+}
+.read-btn:active {
+  background: rgba(116, 135, 218, 0);
+}

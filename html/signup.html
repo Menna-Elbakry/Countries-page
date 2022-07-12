@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>signup</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../main.css"/>
+    <link rel="stylesheet" href="../sass/pages/signup/signup.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="./home.html">Home </a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+
+    </nav>
+    <div>
+        <form action="" method="post">
+            <input type="text" required name="username" id="username" placeholder="Username" /><br>
+            <input type="text" required name="name" id="name" placeholder="Name" /><br>
+            <input type="date" required name="birth-date" id="birth-date" placeholder="BirthDate" /><br>
+            <label name="sex">Gender</label>
+            <select name="gender" id="gender" aria-labelledby="sex">
+                <optgroup>
+                    <option>Male</option>
+                    <option>Female</option>
+                </optgroup>
+            </select><br />
+            <input type="email" required name="email" id="email" placeholder="Email"><br>
+            <input type="password" minlength="5" maxlength="50" id="pass" placeholder="Password"><br>
+            <input type="password" required name="repass" minlength="5" maxlength="50" id="repass"
+                placeholder="Re-Password" /><br />
+            <input type="submit" value="signup">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+    <div class="drops">
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+      </div>
+</body>
+
+</html>
